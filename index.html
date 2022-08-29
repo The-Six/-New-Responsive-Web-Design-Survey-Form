@@ -11,7 +11,9 @@
     <p>This Survey is to identify if Jedi training is too dangerous.</p>
     <form id="survey-form">
       <fieldset>
-        <label>Enter your name: <input type="text" id="name" /></label>
+        <label>Enter your name: <input type="text" id="name-label" placeholder="Anakin Skywalker..."/></label>
+        <label>Enter your email: <input type="email" id="email-label" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="anakin@gmail.com" required /></label>
+        <label>Enter your number: <input type="number" id="number-label" min="0" max="10" placeholder="0829495525"/></label>
       </fieldset>
     </form>
   </body>
