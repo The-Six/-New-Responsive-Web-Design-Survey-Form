@@ -8,7 +8,7 @@
   </head>
   <body>
     <h1 id="title">Path Of The Jedi</h1>
-    <p>This Survey is to identify if Jedi training is too dangerous.</p>
+    <p>This Survey is to identify if the Jedi Trials are too dangerous.</p>
     <form id="survey-form">
       <fieldset>
         <label>Enter your name: <input type="text" id="name-label" placeholder="Anakin Skywalker..."/></label>
@@ -19,7 +19,25 @@
         <label><input type="radio" name="account-type"/> Jedi Master</label>
         <label><input type="radio" name="account-type" class="inline" /> Jedi</label>
         <label><input type="radio" name="account-type"/> Padawan</label>
+        <label>
+          <input type="checkbox" name="terms" class="inline" required /> I accept the <a href="https://starwars.fandom.com/wiki/Jedi_training/Legends">terms and conditions</a>
+        </label>
       </fieldset>
+      <fieldset>
+        <label>How did you hear about us?
+          <select name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">Obi-one Kenobi</option>
+            <option value="2">Mace Windu</option>
+            <option value="3">Yoda</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        <label>Provide a reason why you think the Jedi trials are too dangerous:
+          <textarea name="bio" rows="3" cols="30" placeholder="I was practicing with my lightsaber and..."></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="Submit" />
     </form>
   </body>
 </html>
