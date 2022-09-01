@@ -16,6 +16,7 @@ body {
   margin-right: auto;
   padding: 20px;
   max-width: 500px;
+  border-radius: 9px;
 }
 
 h1,
@@ -53,4 +54,10 @@ select {
   margin: 10px 0 0 0;
   width: 100%;
   min-height: 2em;
+}
+
+input, textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
 }
